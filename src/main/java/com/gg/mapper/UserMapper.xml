@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gg.mapper.UserMapper">
+
+    <insert id="addUser" parameterType="User" >
+        insert into transaction.user(name) values (#{name})
+    </insert>
+<!--    <delete id="deleteByBookID" parameterType="int">-->
+<!--        delete from ssmbook.books where bookID=#{bookID}-->
+<!--    </delete>-->
+<!--    <update id="updateByBookID" parameterType="Books">-->
+<!--        update ssmbook.books set bookName=#{bookName},bookCount=#{bookCount},detail=#{detail}-->
+<!--    </update>-->
+<!--    <select id="selectByBookID" parameterType="int" resultType="Books">-->
+<!--        select * from ssmbook.books where bookID=#{bookID}-->
+<!--    </select>-->
+<!--    <select id="selectAllBook" resultType="Books">-->
+<!--        select * from ssmbook.books-->
+<!--    </select>-->
+</mapper>
